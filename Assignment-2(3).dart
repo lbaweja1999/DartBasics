@@ -12,10 +12,12 @@ int cube(int x) {
   return pow(x, 3);
 }
 
-void multiplication_table(int x) {
-  for (var i = 1; i < 11; i++) {
-    print(x * i);
+List multiplication_table(int x) {
+  List l = [];
+  for (var i = 1; i <= 10; i++) {
+    l.add(x * i);
   }
+  return l;
 }
 
 void combined_function(Function f) {
